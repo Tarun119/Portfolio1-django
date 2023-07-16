@@ -1,0 +1,48 @@
+{% extends 'main/base.html' %}
+{%block title%} Projects {%endblock%}
+
+{%block content%}
+{% include 'main/nav.html' %}
+<div class="container">
+    <h5 class="center-align">Projects</h5>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card blue-grey lighten-1">
+                <div class="card-content white-text">
+                    <span class="card-title">My favourite projects</span>
+                    <p>These are few of the projects i love and want to flex with.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6">
+            <ul class="collapsible popout">
+                {% for icon,name,place in projects %}
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">{{ icon }}</i>{{ name }}</div>
+                    <div class="collapsible-body"><span>{{ place }}</span></div>
+                </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    </div>
+</div>
+{%endblock%}
+
+{% block script%}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function () {
+        $('.collapsible').collapsible();
+    });
+
+</script>
+{% endblock%}

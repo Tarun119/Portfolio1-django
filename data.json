@@ -1,0 +1,19 @@
+{
+    "NAME" : "Tarun Sharma",
+
+    "ABOUT_ME" : "Tarun has just began to work on his first django portfolio.It is to learn django and little of web devlopement.The best is yet to come.",
+
+    "PROJECTS": [ 
+        ["filter_drama", "Google", "I worked on google search engine."],
+        ["place", "Youtube", "Worked on youtube servers"],
+        ["whatshot", "Gmail", "I worked on Gmail spam protections."]
+    ],
+
+    "LANGUAGES": [
+            "C++",
+            "Python",
+            "JAVA",
+            "Javscript"
+    ]
+    
+}
